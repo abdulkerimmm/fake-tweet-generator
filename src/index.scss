@@ -1,0 +1,151 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  border: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif !important;
+  outline: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+html,
+body {
+  height: 100%;
+  background: #000;
+}
+
+#root {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.settings {
+  max-width: 340px;
+  width: 340px;
+  min-width: 340px;
+  color: #fff;
+  border-right: 1px solid #2f3336;
+  height: 100%;
+  padding: 25px;
+  overflow: auto;
+  h3 {
+    font-size: 24px;
+    font-weight: normal;
+    border-bottom: 1px solid #2f3336;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+
+  ul {
+    li:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+  label {
+    font-size: 15px;
+    margin-bottom: 5px;
+    display: block;
+    color: #6e767d;
+  }
+  .input {
+    width: 100%;
+    background: transparent;
+    border-bottom: 1px solid #2f3336;
+    color: #fff;
+    padding: 10px 0 15px;
+    font-size: 15px;
+    &::placeholder {
+      color: #fff;
+    }
+    &:focus {
+      border-color: #4e555a;
+    }
+  }
+  button {
+    width: 100%;
+    height: 40px;
+    border-radius: 3px;
+    font-size: 16px;
+    color: #fff;
+    background: #1da1f2;
+    cursor: pointer;
+  }
+}
+
+select {
+  width: 100%;
+  background: transparent;
+  border-bottom: 1px solid #2f3336;
+  color: #fff;
+  padding: 10px 0 15px;
+  font-size: 15px;
+  option {
+    color: #111; // fallback for windows
+  }
+  &::placeholder {
+    color: #fff;
+  }
+  &:focus {
+    border-color: #4e555a;
+  }
+}
+
+.tweet {
+  border: 1px solid #2f3336;
+  width: 600px;
+  height: 240px;
+  margin: 25px auto;
+  padding: 0 16px;
+  background: #000;
+  color: #fff;
+  font-weight: 400;
+
+  .header {
+    height: 42px;
+    display: flex;
+    margin: 10px 10px;
+    img {
+      height: 100%;
+      margin-right: 10px;
+      border-radius: 50%;
+    }
+    .userinfo {
+      display: flex;
+      flex-direction: column;
+      .span2 {
+        color: rgb(113, 118, 123);
+      }
+    }
+  }
+
+  .content {
+    padding-left: 7px;
+    padding-right: 10px;
+    padding-top: 10px;
+    span {
+      color: #1da1f2;
+    }
+  }
+  .info {
+    display: flex;
+    margin-top: 10px;
+    padding-left: 7px;
+    padding-bottom: 10px;
+    color: rgb(113, 118, 123);
+    border-bottom: 1px solid #2f3336;
+  }
+  .actions {
+    display: flex;
+    padding-top: 10px;
+    justify-content: space-between;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-bottom: 10px;
+  }
+  .actions div {
+    display: flex;
+  }
+}
